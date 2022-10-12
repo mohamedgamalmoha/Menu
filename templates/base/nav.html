@@ -1,0 +1,26 @@
+{% load static %}
+<nav>
+    <div class="navContainer">
+        <a href="#" class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+        <ul>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Burger</a></li>
+            <li><a href="#">Fish</a></li>
+            <li><a href="#">Meat</a></li>
+        </ul>
+        <span class="toggleBtn" id="toggler"> <i class="fa-solid fa-bars"></i></span>
+    </div>
+</nav>
+
+<div class="responsiveNav global-animation mobileNavCloser" id="mobNav">
+    <div class="resNavTop">
+        <a class="navCloser logo" href="#"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+        <span class="navCloser closeBtn"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+    <ul>
+        <li><a class="navCloser" href="#">Pizza</a></li>
+        <li><a class="navCloser" href="#">Burger</a></li>
+        <li><a class="navCloser" href="#">Fish</a></li>
+        <li><a class="navCloser" href="#">Meat</a></li>
+    </ul>
+</div>
