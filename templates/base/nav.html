@@ -3,10 +3,9 @@
     <div class="navContainer">
         <a href="#" class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
         <ul>
-            <li><a href="#">Pizza</a></li>
-            <li><a href="#">Burger</a></li>
-            <li><a href="#">Fish</a></li>
-            <li><a href="#">Meat</a></li>
+            {% for category in categories %}
+            <li><a class="navCloser" href="#">{{ category.name }}</a></li>
+            {% endfor %}
         </ul>
         <span class="toggleBtn" id="toggler"> <i class="fa-solid fa-bars"></i></span>
     </div>
@@ -18,9 +17,8 @@
         <span class="navCloser closeBtn"><i class="fa-solid fa-xmark"></i></span>
     </div>
     <ul>
-        <li><a class="navCloser" href="#">Pizza</a></li>
-        <li><a class="navCloser" href="#">Burger</a></li>
-        <li><a class="navCloser" href="#">Fish</a></li>
-        <li><a class="navCloser" href="#">Meat</a></li>
+        {% for category in categories %}
+        <li><a class="navCloser" href="#">{{ category.name }}</a></li>
+        {% endfor %}
     </ul>
 </div>

@@ -4,10 +4,9 @@
         <a href="#" class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
         <div class="Links">
             <p>Links</p>
-            <a href="#">Pizza</a>
-            <a href="#">Burger</a>
-            <a href="#">Fish</a>
-            <a href="#">Meat</a>
+            {% for category in categories %}
+            <a href="#">{{ category.name }}</a>
+            {% endfor %}
         </div>
         <div class="Links">
             <p>Contact Us Now!</p>

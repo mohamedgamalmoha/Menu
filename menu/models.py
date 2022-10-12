@@ -28,6 +28,7 @@ class Product(models.Model):
     category = models.ManyToManyField(Category,  related_name='products', verbose_name=_('Category'))
     description = models.TextField(blank=True, null=True, verbose_name=_('Description'))
     image = models.ImageField(upload_to='products/%y/%m/%d', blank=True, null=True, verbose_name=_('Image'))
+    price = models.DecimalField(max_digits=10, decimal_places=2, null=True)
     featured = models.BooleanField(default=False, null=True, verbose_name=_('Featured'))
     create_at = models.DateTimeField(auto_now_add=True, null=True, verbose_name=_('Creation Date'))
     update_at = models.DateTimeField(auto_now=True, null=True, verbose_name=_('Update Date'))

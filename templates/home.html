@@ -14,80 +14,11 @@
 
 <div class="swiper mySwiper SliderSection">
     <div class="swiper-wrapper">
-<!--        {% for product in featured_products %}-->
-<!--        <div class="swiper-slide">-->
-<!--            <img src="{{ product.image.url }}" alt="photo">-->
-<!--        </div>-->
-<!--        {% endfor %}-->
+        {% for product in featured_products %}
         <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
+            <img src="{{ product.image.url }}" alt="photo">
         </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-        </div>
-        <div class="swiper-slide">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-        </div>
+        {% endfor %}
     </div>
     <div class="prev">
         <i class="fa-solid fa-circle-chevron-left"></i>
@@ -97,114 +28,43 @@
     </div>
 </div>
 
-<section class="sectionOne">
-    <div class="titleContainer">
-        <img src="{% static 'images/logo.png' %}" alt="icon" style="width:100px ; height:100px;">
-        <h2 class="title">We Offer People The Best Pizza</h2>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product3.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
-            <div class="cardBody">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-            <div class="cardLayout">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, omnis!</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="sectionTwo">
     <h2 class="title">Our Specials</h2>
     <div class="cards2">
+        {% for product in featured_products %}
         <div class="card2">
-            <img src="{% static 'images/product1.jpg' %}" alt="photo">
+            <img src="{{ product.image.url }}" alt="photo">
             <div class="cardBody2">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.price }}$</p>
             </div>
         </div>
-        <div class="card2">
-            <img src="{% static 'images/product2.jpg' %}" alt="photo">
-            <div class="cardBody2">
-                <h2>Name of the Product</h2>
-                <p>99$</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </section>
+
+{% for category in categories %}
+<section class="sectionOne">
+    <div class="titleContainer">
+        <img src="{{ category.image.url }}" alt="icon" style="width:100px ; height:100px;">
+        <h2 class="title">{{ category.name }}</h2>
+    </div>
+    <div class="cards">
+        {% for product in category.products.available %}
+        <div class="card">
+            <img src="{{ product.image.url }}}" alt="photo">
+            <div class="cardBody">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.price }}$</p>
+            </div>
+            <div class="cardLayout">
+                <p>{{ product.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endfor %}
 
  <div class="sectionThree">
      <div class="sThreeContainer">
@@ -213,7 +73,7 @@
          </div>
          <div class="sThreeContent">
              <h3 class="smTitle">We have good burgers</h3>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae rem asperiores, exercitationem minima fugiat?</p>
+             <p>Best value for money, dont wait hurry up !!..</p>
          </div>
      </div>
  </div>
@@ -222,9 +82,4 @@
     <h2 class="title">You'll Feel Like Your Home</h2>
     <video src="{% static 'videos/video.mp4' %}" muted autoplay controls></video>
 </section>
-
-<!--{% for category in categories %}-->
-<!--    {% for product in category.products.available %}-->
-<!--    {% endfor %}-->
-<!--{% endfor %}-->
 {% endblock %}
