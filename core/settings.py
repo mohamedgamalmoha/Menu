@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "accounts",
     "menu",
+    'about_us'
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'about_us.context_processors.main_info'
             ],
         },
     },
@@ -227,19 +229,9 @@ JAZZMIN_SETTINGS = {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
-        # Custom icon
-        # "events.event": "fas fa-calendar-week",
-        # "countries.country": "fas fa-globe-africa",
         "menu.product": "fas fa-boxes",
         "menu.category": "far fa-file-pdf",
-        # "information.certificate": "fas fa-award",
-        # "information.chairmanword": "fas fa-user-cog",
-        # "information.company": "far fa-building",
-        # "information.contact": "far fa-id-card",
-        # "information.contactusmessage": "fas fa-envelope-open-text",
-        # "information.qualitystandard": "fas fa-chart-line",
-        # "information.vision": "fas fa-glasses",
-        # "information.mission": "fas fa-bullseye",
+        "about_us.maininfo": "far fa-id-card",
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",

@@ -3,7 +3,7 @@
     <div class="navContainer">
         <a href="#" class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
         <ul>
-            {% for category in categories %}
+            {% for category in header_categories %}
             <li><a class="navCloser" href="#">{{ category.name }}</a></li>
             {% endfor %}
         </ul>
@@ -17,7 +17,7 @@
         <span class="navCloser closeBtn"><i class="fa-solid fa-xmark"></i></span>
     </div>
     <ul>
-        {% for category in categories %}
+        {% for category in header_categories %}
         <li><a class="navCloser" href="#">{{ category.name }}</a></li>
         {% endfor %}
     </ul>
